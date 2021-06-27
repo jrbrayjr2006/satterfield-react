@@ -44,3 +44,19 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Additional Information
+
+Here are some helpful ustilities and techniques to assist in developing a React app.
+
+### Using the generate-react-cli Utility
+
+The installation and basic instructions for this utility are at its [npm site](https://www.npmjs.com/package/generate-react-cli).
+
+In order to generate a component use a command similar to the following:
+
+```cmd
+npx generate-react-cli component Header
+```
+
+Storybook is used in this project, so install the storybook module `npm i @storybook/react`.
