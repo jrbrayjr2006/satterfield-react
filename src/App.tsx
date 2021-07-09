@@ -5,10 +5,11 @@ import Header from './components/Header/Header';
 import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
+  const startDate: Date = new Date();
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
+        <Header startDate={startDate} />
         <Dashboard />
       </header>
     </div>
