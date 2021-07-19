@@ -1,15 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, fireEvent, waitFor, screen } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import Header from './Header';
 
 describe('<Header />', () => {
-  let component;
-
-  beforeEach(() => {
-    component = shallow(<Header />);
-  });
-
-  test('It should mount', () => {
-    expect(component.length).toBe(1);
+  it('It should mount', () => {
+    const { container, getByText } = render(<Header />)
+    expect(getByText('Satterfield Dashboard')).toBeInTheDocument()
   });
 });
